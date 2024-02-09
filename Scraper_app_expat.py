@@ -13,7 +13,7 @@ st.markdown("<h1 style='text-align: center; color: black;'>EXPAT DATA SCRAPER AP
 st.markdown("""
 This app performs simple webscraping of data from expat-dakar over multiples pages!
 * **Python libraries:** base64, pandas, streamlit, requests, bs4
-* **Data source:** [Expat-Dakar](https://www.expat-dakar.com/).
+* **Data source:** [Expat-Dakar](https://www.expat-dakar.com/voitures).
 """)
 
 
@@ -37,8 +37,7 @@ def add_bg_from_local(image_file):
 add_bg_from_local('img_file2.jpg') 
 
 # Stocker les données dans des variables
-Vehicles = pd.read_csv('Vehicles_data.csv')
-Motocycles = pd.read_csv('Motocycles_data.csv')
+Vehicles = pd.read_csv('TP_Group4.csv')
 
 # caching des données
 @st.cache_data
@@ -78,8 +77,8 @@ local_css('style.css')
 
 
 # Charger les données 
-load(Vehicles, 'Vehicles data', '1', '101')
-load(Motocycles, 'Motocycles data', '2', '102')
+load(Vehicles, 'TP_Group4', '1', '101')
+# load(Motocycles, 'Motocycles data', '2', '102')
 
 
 
@@ -89,7 +88,7 @@ import streamlit.components.v1 as components
 
 
 components.html("""
-    <iframe src="https://ee.kobotoolbox.org/i/y3pfGxMz" width="700" height="200"></iframe>
+    <iframe src="https://ee.kobotoolbox.org/i/NmHKyC3V" width="800" height="600"></iframe>
     """)
 
 
