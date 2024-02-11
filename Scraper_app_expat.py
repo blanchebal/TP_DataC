@@ -81,9 +81,9 @@ load(Vehicles, 'TP_Group4', '1', '101')
 # load(Motocycles, 'Motocycles data', '2', '102')
 
 # Bouton déroulant
-selected_column = st.selectbox('Sélectionnez une colonne', Vehicles.columns)
-st.write(f"Contenu de la colonne '{selected_column}':")
-st.write(df[selected_column])
+# selected_column = st.selectbox('Sélectionnez une colonne', Vehicles.columns)
+# st.write(f"Contenu de la colonne '{selected_column}':")
+# st.write(df[selected_column])
 
 
 import streamlit as st
