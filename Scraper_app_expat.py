@@ -80,7 +80,10 @@ local_css('style.css')
 load(Vehicles, 'TP_Group4', '1', '101')
 # load(Motocycles, 'Motocycles data', '2', '102')
 
-
+# Bouton déroulant
+selected_column = st.selectbox('Sélectionnez une colonne', Vehicles.columns)
+st.write(f"Contenu de la colonne '{selected_column}':")
+st.write(df[selected_column])
 
 
 import streamlit as st
@@ -88,7 +91,7 @@ import streamlit.components.v1 as components
 
 
 components.html("""
-    <iframe src="https://ee.kobotoolbox.org/i/NmHKyC3V" width="800" height="600"></iframe>
+    <iframe src=https://ee.kobotoolbox.org/i/NmHKyC3V width="800" height="600"></iframe>
     """)
 
 
