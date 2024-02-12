@@ -73,9 +73,6 @@ def local_css(file_name):
 
 local_css('style.css')        
 
-
-
-
 # Charger les données 
 load(Vehicles, 'TP_Group4', '1', '101')
 # load(Motocycles, 'Motocycles data', '2', '102')
@@ -91,7 +88,7 @@ import streamlit.components.v1 as components
 
 
 components.html("""
-    <iframe src=https://ee.kobotoolbox.org/i/NmHKyC3V width="800" height="600"></iframe>
+    <iframe src="https://ee.kobotoolbox.org/i/kUWU2Twx" width="800" height="600"></iframe>
     """)
 
 
